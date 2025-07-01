@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Image Classifier</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 60px;
+    }
+    .upload-box {
+      border: 2px dashed #aaa;
+      padding: 30px;
+      text-align: center;
+      width: 400px;
+      margin: auto;
+    }
+    .result {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h2 align="center">Image-Based Text Classifier</h2>
+  <form method="POST" action="/" enctype="multipart/form-data" class="upload-box">
+    <input type="file" name="image" required><br><br>
+    <input type="submit" value="Predict">
+  </form>
+
+  {% if prediction %}
+    <div class="result">
+      <p><strong>Prediction:</strong> {{ prediction }}</p>
+    </div>
+  {% endif %}
+</body>
+</html>
