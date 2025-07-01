@@ -112,8 +112,8 @@ Labels: ['invoice', 'note', 'sign']
 ### ✅ 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/text-classifier.git
-cd text-classifier
+git clone https://github.com/MinoshPerera/text-classification-project
+cd text-classification-project
 ```
 
 ### ✅ 2. Set Up Virtual Environment
